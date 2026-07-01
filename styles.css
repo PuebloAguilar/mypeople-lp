@@ -474,9 +474,38 @@ p {
   margin-bottom: 38px;
 }
 
+.variant-pill {
+  display: inline-flex;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 0 18px;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  background: var(--oat);
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  text-transform: lowercase;
+}
+
+.problem-intro {
+  max-width: 760px;
+  margin-top: 26px;
+}
+
+.problem-intro p {
+  margin-bottom: 10px;
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.72;
+}
+
 .problem-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
 
@@ -609,7 +638,7 @@ input::placeholder {
   }
 
   .problem-list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .flow-rows article {
@@ -655,9 +684,14 @@ input::placeholder {
 
   .hero__lead,
   .video-section__copy p,
+  .problem-intro p,
   .waitlist-copy p {
     font-size: 15px;
     max-width: 100%;
+  }
+
+  .problem-list {
+    grid-template-columns: 1fr;
   }
 
   .video-placeholder strong {
