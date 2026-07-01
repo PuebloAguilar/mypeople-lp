@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MyPeople - Waitlist</title>
+    <title>MyPeople - Waitlist com VSL no topo</title>
     <meta
       name="description"
       content="Entre na waitlist do MyPeople e acompanhe demos reais, bastidores e primeiros convites no grupo fechado."
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="variants.js" defer></script>
   </head>
-  <body>
+  <body class="page-vsl-top">
     <header class="site-header" aria-label="Topo">
       <a class="brand" href="#top" aria-label="MyPeople">
         <img src="assets/plow-icon.png" alt="" />
@@ -28,7 +28,7 @@
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero hero--vsl-top" aria-labelledby="hero-title">
         <div class="hero__copy">
           <p class="eyebrow">Waitlist para early builders</p>
           <h1 id="hero-title">
@@ -46,15 +46,11 @@
           </p>
           <div class="hero__actions">
             <a class="button button--dark" href="#waitlist">Entrar na waitlist</a>
-            <a class="button button--outline" href="#demo">Ver a VSL</a>
+            <a class="button button--outline" href="#problem">Entender o problema</a>
           </div>
         </div>
 
-        <aside class="hero-video-card" aria-label="VSL demo do MyPeople">
-          <div class="hero-video-card__top">
-            <span>VSL demo</span>
-            <strong>VTurb embed</strong>
-          </div>
+        <aside class="hero-video-card hero-video-card--large" aria-label="VSL do MyPeople">
           <div class="hero-video-frame">
             <div class="video-placeholder video-placeholder--hero">
               <span>Embed VTurb</span>
@@ -67,37 +63,7 @@
         </aside>
       </section>
 
-      <section id="demo" class="video-section" aria-labelledby="demo-title">
-        <div class="video-section__copy">
-          <p class="eyebrow eyebrow--dark">VSL demo</p>
-          <h2 id="demo-title">
-            Veja o loop inteiro.
-            <em>
-              Prioridade,<br class="mobile-break" />
-              Boss, agente,<br class="mobile-break" />
-              prova.
-            </em>
-          </h2>
-          <p>
-            A VSL fica aqui via VTurb.<br class="mobile-break" />
-            Ela deve levar a pessoa para<br class="mobile-break" />
-            o formulário da waitlist logo abaixo,<br class="mobile-break" />
-            sem CTA genérico.
-          </p>
-        </div>
-
-        <div class="video-frame video-frame--secondary">
-          <div class="video-placeholder">
-            <span>Embed VTurb</span>
-            <strong>
-              Inserir player<br class="mobile-break" />
-              da VSL aqui
-            </strong>
-          </div>
-        </div>
-      </section>
-
-      <section class="problem-section" aria-labelledby="problem-title">
+      <section id="problem" class="problem-section problem-section--dark" aria-labelledby="problem-title">
         <div class="section-heading">
           <p class="eyebrow" id="problem-eyebrow">O problema real</p>
           <span class="variant-pill" id="variant-pill" hidden>opção 2 / reposicionamento</span>
