@@ -123,6 +123,11 @@ a {
   max-width: 760px;
 }
 
+.hero__headline,
+.hero__after-video {
+  min-width: 0;
+}
+
 .eyebrow {
   margin: 0 0 18px;
   color: var(--grove);
@@ -684,6 +689,34 @@ input::placeholder {
     padding: 46px 0 58px;
   }
 
+  .page-vsl-top .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: calc(100svh - 50px);
+  }
+
+  .page-vsl-top .hero__copy {
+    display: contents;
+  }
+
+  .page-vsl-top .hero__headline {
+    order: 1;
+    display: grid;
+    min-height: 40svh;
+    align-content: center;
+    text-align: center;
+  }
+
+  .page-vsl-top .hero-video-card {
+    order: 2;
+  }
+
+  .page-vsl-top .hero__after-video {
+    order: 3;
+    text-align: center;
+  }
+
   h1 {
     font-size: 42px;
     line-height: 1.02;
@@ -704,6 +737,12 @@ input::placeholder {
   .waitlist-copy p {
     font-size: 15px;
     max-width: 100%;
+  }
+
+  .page-vsl-top .hero__lead {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .problem-list {
