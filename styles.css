@@ -189,8 +189,7 @@ h2 em {
   font-style: italic;
 }
 
-.video-section h2 em,
-.waitlist-section h2 em {
+.video-section h2 em {
   color: rgba(240, 240, 232, 0.56);
 }
 
@@ -277,14 +276,14 @@ p {
 
 .button--volt {
   width: 100%;
-  background: var(--volt);
-  color: var(--midnight);
+  background: var(--midnight);
+  color: var(--chalk);
 }
 
 .button--volt:hover {
   box-shadow:
-    0 4px 20px rgba(213, 239, 138, 0.25),
-    0 0 30px rgba(213, 239, 138, 0.25);
+    0 4px 20px rgba(1, 0, 10, 0.14),
+    0 0 30px rgba(1, 0, 10, 0.08);
 }
 
 .hero-video-card {
@@ -473,6 +472,10 @@ p {
 .flow-section--tour h2,
 .flow-section--tour h3 {
   color: var(--text-dark);
+}
+
+.flow-section--tour .flow-heading h2 {
+  font-size: clamp(46px, 5.8vw, 72px);
 }
 
 .flow-section--tour h2 em {
@@ -667,8 +670,8 @@ p {
   max-width: none;
   margin: 0;
   padding: clamp(76px, 9vw, 120px) max(20px, calc((100vw - var(--max)) / 2));
-  background: var(--dark-bg);
-  color: var(--text-dark);
+  background: var(--chalk);
+  color: var(--text);
 }
 
 .waitlist-copy {
@@ -677,7 +680,7 @@ p {
 
 .waitlist-copy p {
   max-width: 680px;
-  color: var(--muted-dark);
+  color: var(--text-muted);
 }
 
 .disclaimer {
@@ -689,16 +692,17 @@ p {
 .form {
   display: grid;
   gap: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  border: 1px solid var(--card-border);
   border-radius: 22px;
-  background: var(--dark-card);
+  background: var(--card-bg);
   padding: 22px;
+  box-shadow: 0 18px 60px rgba(1, 0, 10, 0.06);
 }
 
 label {
   display: grid;
   gap: 8px;
-  color: var(--muted-dark);
+  color: var(--text-muted);
   font-size: 14px;
   font-weight: 500;
 }
@@ -707,27 +711,27 @@ input,
 select {
   width: 100%;
   min-height: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.11);
+  border: 1px solid var(--card-border);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-dark);
+  background: var(--chalk);
+  color: var(--text);
   font: inherit;
   padding: 0 13px;
   outline: none;
 }
 
 select option {
-  background: var(--dark-card);
+  background: var(--card-bg);
 }
 
 input:focus,
 select:focus {
-  border-color: var(--volt);
-  box-shadow: 0 0 0 3px rgba(213, 239, 138, 0.14);
+  border-color: var(--grove);
+  box-shadow: 0 0 0 3px rgba(94, 122, 94, 0.12);
 }
 
 input::placeholder {
-  color: rgba(240, 240, 232, 0.34);
+  color: var(--text-light);
 }
 
 .form .button {
@@ -782,8 +786,8 @@ input::placeholder {
   }
 
   .hero {
-    gap: 24px;
-    padding: 34px 0 48px;
+    gap: 14px;
+    padding: 22px 0 36px;
   }
 
   .page-vsl-top .hero {
@@ -800,8 +804,9 @@ input::placeholder {
   .page-vsl-top .hero__headline {
     order: 1;
     display: grid;
-    min-height: min(30svh, 240px);
+    min-height: auto;
     align-content: center;
+    padding: 42px 0 0;
     text-align: center;
   }
 
@@ -815,12 +820,13 @@ input::placeholder {
   }
 
   .page-vsl-top .hero-video-card {
-    margin-top: 2px;
+    margin-top: 0;
   }
 
   h1 {
     width: 100%;
     max-width: none;
+    margin-bottom: 0;
     font-size: clamp(34px, 9.4vw, 38px);
     line-height: 0.98;
   }
@@ -832,6 +838,10 @@ input::placeholder {
   h2 {
     font-size: 36px;
     line-height: 1.06;
+  }
+
+  .flow-section--tour .flow-heading h2 {
+    font-size: 38px;
   }
 
   h2 em {
@@ -847,6 +857,7 @@ input::placeholder {
 
   .page-vsl-top .hero__lead {
     margin-top: 0;
+    margin-bottom: 18px;
     margin-right: auto;
     margin-left: auto;
   }
