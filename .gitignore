@@ -1,0 +1,5 @@
+.DS_Store
+*.log
+audit-*.png
+dist/
+node_modules/
