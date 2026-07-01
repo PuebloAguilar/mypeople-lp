@@ -864,7 +864,7 @@ input::placeholder {
   }
 
   .flow-section--tour {
-    padding: 66px 0 78px;
+    padding: 62px 0 78px;
   }
 
   .flow-section--tour .flow-heading,
@@ -873,7 +873,20 @@ input::placeholder {
   }
 
   .flow-section--tour .flow-heading {
-    margin-bottom: 34px;
+    max-width: 330px;
+    margin-bottom: 38px;
+    text-align: center;
+  }
+
+  .flow-section--tour .flow-heading .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .flow-section--tour .flow-heading h2 {
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    text-align: center;
   }
 
   .product-tour {
