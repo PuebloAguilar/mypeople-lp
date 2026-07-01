@@ -105,15 +105,19 @@ const variants = {
 
 function getVariantId() {
   const params = new URLSearchParams(window.location.search);
-  const candidate = params.get("variant") || params.get("v") || "1";
+  const candidate = params.get("variant") || params.get("v") || "2";
   return variants[candidate] ? candidate : "1";
 }
 
 function renderProblemVariant() {
+  const params = new URLSearchParams(window.location.search);
+  const explicitVariant = params.has("variant") || params.has("v");
   const variant = variants[getVariantId()];
-  document.title = `MyPeople - ${variant.label}`;
+  document.title = explicitVariant ? `MyPeople - ${variant.label}` : "MyPeople - Waitlist";
   document.getElementById("problem-eyebrow").textContent = variant.eyebrow;
-  document.getElementById("variant-pill").textContent = variant.label;
+  const variantPill = document.getElementById("variant-pill");
+  variantPill.textContent = variant.label;
+  variantPill.hidden = !explicitVariant;
   document.getElementById("problem-title").innerHTML = variant.title;
   document.getElementById("problem-intro").innerHTML = variant.intro
     .map((paragraph) => `<p>${paragraph}</p>`)
@@ -132,4 +136,3 @@ function renderProblemVariant() {
 }
 
 renderProblemVariant();
-

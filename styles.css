@@ -491,6 +491,10 @@ p {
   text-transform: lowercase;
 }
 
+.variant-pill[hidden] {
+  display: none;
+}
+
 .problem-intro {
   max-width: 760px;
   margin-top: 26px;
