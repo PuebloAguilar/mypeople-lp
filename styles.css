@@ -101,6 +101,14 @@ a {
   padding: clamp(72px, 10vw, 124px) 0 clamp(72px, 9vw, 110px);
 }
 
+.page-vsl-top .hero {
+  width: min(1280px, calc(100% - 40px));
+  grid-template-columns: minmax(0, 0.78fr) minmax(520px, 1.06fr);
+  gap: clamp(34px, 5vw, 72px);
+  padding-top: clamp(58px, 7vw, 92px);
+  padding-bottom: clamp(58px, 7vw, 92px);
+}
+
 .hero__copy,
 .hero__visual,
 .hero-video-card,
@@ -317,6 +325,19 @@ p {
   border-radius: 14px;
 }
 
+.page-vsl-top .hero-video-card--large {
+  padding: 12px;
+}
+
+.page-vsl-top .hero-video-card--large .hero-video-frame {
+  border-radius: 20px;
+  padding: 12px;
+}
+
+.page-vsl-top .hero-video-card--large .video-placeholder {
+  border-radius: 16px;
+}
+
 .handle {
   display: inline-flex;
   width: max-content;
@@ -405,6 +426,46 @@ p {
 .problem-section,
 .flow-section {
   padding: clamp(72px, 9vw, 118px) 0;
+}
+
+.problem-section--dark {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(76px, 9vw, 120px) max(20px, calc((100vw - var(--max)) / 2));
+  background: var(--dark-bg);
+  color: var(--text-dark);
+}
+
+.problem-section--dark .eyebrow {
+  color: var(--volt);
+}
+
+.problem-section--dark h2 {
+  color: var(--text-dark);
+}
+
+.problem-section--dark h2 em {
+  color: rgba(240, 240, 232, 0.56);
+}
+
+.problem-section--dark .problem-intro p,
+.problem-section--dark .problem-list p {
+  color: var(--muted-dark);
+}
+
+.problem-section--dark .problem-list article {
+  border-color: rgba(255, 255, 255, 0.09);
+  background: var(--dark-card);
+  box-shadow: none;
+}
+
+.problem-section--dark .problem-list h3 {
+  color: var(--text-dark);
+}
+
+.problem-section--dark .problem-list span {
+  color: rgba(240, 240, 232, 0.36);
 }
 
 .section-heading {
@@ -575,6 +636,11 @@ input::placeholder {
     grid-template-columns: 1fr;
   }
 
+  .page-vsl-top .hero {
+    width: min(var(--max), calc(100% - 40px));
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     min-height: auto;
   }
@@ -594,6 +660,14 @@ input::placeholder {
   .hero,
   .problem-section,
   .flow-section {
+    width: calc(100% - 28px);
+  }
+
+  .problem-section--dark {
+    width: 100%;
+  }
+
+  .page-vsl-top .hero {
     width: calc(100% - 28px);
   }
 
