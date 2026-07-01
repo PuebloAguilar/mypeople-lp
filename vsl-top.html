@@ -16,7 +16,6 @@
     />
     <link rel="icon" type="image/png" href="assets/plow-icon.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="variants.js" defer></script>
   </head>
   <body class="page-vsl-top">
     <header class="site-header" aria-label="Topo">
@@ -47,7 +46,7 @@
             </p>
             <div class="hero__actions">
               <a class="button button--dark" href="#waitlist">Entrar na waitlist</a>
-              <a class="button button--outline" href="#problem">Entender o problema</a>
+              <a class="button button--outline" href="#flow">Como funciona</a>
             </div>
           </div>
         </div>
@@ -65,78 +64,31 @@
         </aside>
       </section>
 
-      <section id="problem" class="problem-section problem-section--dark" aria-labelledby="problem-title">
-        <div class="section-heading">
-          <p class="eyebrow" id="problem-eyebrow">O problema real</p>
-          <span class="variant-pill" id="variant-pill" hidden>opção 2 / reposicionamento</span>
-          <h2 id="problem-title">O problema não é o agente. <em>É a falta de operação.</em></h2>
-          <div class="problem-intro" id="problem-intro">
-            <p>Um agente sozinho ajuda.</p>
-            <p>Dois agentes já começam a pedir contexto.</p>
-            <p>
-              Cinco agentes viram abas abertas, tarefas pela metade e você tentando reconstruir o que aconteceu.
-            </p>
-            <p>
-              Aí parece que o modelo piorou. Mas muitas vezes o problema é mais simples: não tem Boss, não tem
-              fonte de verdade e não tem um lugar para a entrega voltar.
-            </p>
-          </div>
-        </div>
-
-        <div class="problem-list" id="problem-cards">
-          <article>
-            <span>01</span>
-            <h3>Sem chefe</h3>
-            <p>Ninguém decide prioridade, próximo passo ou quando chamar outro agente.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Sem fonte de verdade</h3>
-            <p>Cada terminal sabe um pedaço e você precisa juntar tudo na mão.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Sem prova de entrega</h3>
-            <p>A entrega não volta com print, link, vídeo, teste ou explicação.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Sem próximo passo claro</h3>
-            <p>Quando algo termina ou trava, a operação fica esperando você perceber.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="flow-section flow-section--tour" aria-labelledby="flow-title">
+      <section id="flow" class="flow-section flow-section--tour" aria-labelledby="flow-title">
         <div class="section-heading flow-heading">
           <p class="eyebrow">Como funciona</p>
           <h2 id="flow-title">
-            Do caos de terminais
+            Um loop simples.
             <em>
-              a uma operação<br class="mobile-break" />
-              rastreável.
+              Prioridade,<br class="mobile-break" />
+              Boss, prova.
             </em>
           </h2>
           <p>
-            MyPeople não tenta ser mais uma janela para você cuidar. Ele organiza o loop inteiro:
-            prioridade, decisão, execução, acompanhamento, prova e próximo passo.
+            Você não precisa operar agente por agente. Escreve a prioridade, deixa o Boss coordenar e acompanha
+            a entrega voltando para o card certo.
           </p>
         </div>
 
-        <div class="product-tour">
+        <div class="product-tour product-tour--simple">
           <article class="tour-step">
             <div class="tour-step__copy">
-              <span class="handle handle--dark">01 / board</span>
-              <h3>Você transforma intenção em prioridade clara.</h3>
+              <span class="handle handle--dark">01 / prioridade</span>
+              <h3>Você escreve o que precisa acontecer.</h3>
               <p>
-                Em vez de jogar contexto solto em vários chats, você cria uma prioridade no board com o que
-                precisa ser feito e onde a entrega deve voltar.
+                A tarefa entra no board com contexto, objetivo e critério de entrega. Em vez de espalhar prompt
+                em terminal solto, tudo começa em uma fonte de verdade.
               </p>
-              <ul class="tour-bullets">
-                <li>Contexto e objetivo ficam no card.</li>
-                <li>A tarefa nasce em uma fonte de verdade.</li>
-                <li>O Boss sabe exatamente por onde começar.</li>
-              </ul>
             </div>
             <div class="tour-visual tour-visual--board" aria-hidden="true">
               <div class="mock-window">
@@ -147,11 +99,7 @@
                 <div class="mock-card mock-card--active">
                   <span>nova prioridade</span>
                   <h4>Criar onboarding do produto</h4>
-                  <p>Mostrar setup, primeiro agente e prova no card.</p>
-                </div>
-                <div class="mock-card">
-                  <span>contexto</span>
-                  <p>Repo, objetivo, restrições e critério de aceite.</p>
+                  <p>Contexto, objetivo e prova esperada no mesmo card.</p>
                 </div>
               </div>
             </div>
@@ -160,33 +108,28 @@
           <article class="tour-step tour-step--reverse">
             <div class="tour-step__copy">
               <span class="handle handle--dark">02 / boss</span>
-              <h3>O Boss lê o contexto e decide o próximo movimento.</h3>
+              <h3>O Boss coordena os agentes.</h3>
               <p>
-                O Boss funciona como coordenador da operação. Ele interpreta a prioridade, escolhe o caminho
-                de execução e decide qual agente precisa entrar.
+                O Boss entende a prioridade, decide o próximo passo e acompanha quem está trabalhando, parado ou
+                travado. Você vê a operação sem ficar cobrando status manualmente.
               </p>
-              <ul class="tour-bullets">
-                <li>Quebra tarefa grande em passos menores.</li>
-                <li>Escolhe se precisa de frontend, backend, testes ou investigação.</li>
-                <li>Mantém a operação andando sem você cobrar manualmente.</li>
-              </ul>
             </div>
             <div class="tour-visual tour-visual--boss" aria-hidden="true">
               <div class="decision-panel">
                 <span class="status-dot"></span>
                 <p class="mock-label">Boss online</p>
-                <h4>Próximo passo decidido</h4>
+                <h4>Agentes em operação</h4>
                 <div class="decision-line">
-                  <span>ler contexto</span>
-                  <strong>feito</strong>
+                  <span>frontend</span>
+                  <strong>working</strong>
                 </div>
                 <div class="decision-line">
-                  <span>despachar agente</span>
-                  <strong>frontend</strong>
+                  <span>tests</span>
+                  <strong>idle</strong>
                 </div>
                 <div class="decision-line">
-                  <span>critério de entrega</span>
-                  <strong>print + link</strong>
+                  <span>attach</span>
+                  <strong>terminal vivo</strong>
                 </div>
               </div>
             </div>
@@ -194,122 +137,19 @@
 
           <article class="tour-step">
             <div class="tour-step__copy">
-              <span class="handle handle--dark">03 / hud</span>
-              <h3>Você acompanha agentes vivos, parados e travados.</h3>
+              <span class="handle handle--dark">03 / prova</span>
+              <h3>A entrega volta para o card.</h3>
               <p>
-                O HUD tira você do escuro. Em vez de perguntar "terminou?", você vê quem está trabalhando,
-                quem está idle, quem travou e qual foi o último resumo.
+                Quando o agente termina, o trabalho não fica perdido em uma aba. Comentário, print, vídeo, link,
+                resumo ou terminal voltam para a tarefa certa.
               </p>
-              <ul class="tour-bullets">
-                <li>Status vivo por agente.</li>
-                <li>Último resumo visível sem abrir terminal.</li>
-                <li>Bloqueios aparecem antes de virarem bagunça.</li>
-              </ul>
-            </div>
-            <div class="tour-visual tour-visual--hud" aria-hidden="true">
-              <div class="hud-list">
-                <div class="hud-row">
-                  <span class="agent-dot agent-dot--working"></span>
-                  <div>
-                    <strong>frontend</strong>
-                    <p>working · criando telas</p>
-                  </div>
-                </div>
-                <div class="hud-row">
-                  <span class="agent-dot agent-dot--idle"></span>
-                  <div>
-                    <strong>tests</strong>
-                    <p>idle · aguardando build</p>
-                  </div>
-                </div>
-                <div class="hud-row">
-                  <span class="agent-dot agent-dot--blocked"></span>
-                  <div>
-                    <strong>debug</strong>
-                    <p>blocked · erro no ambiente</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="tour-step tour-step--reverse">
-            <div class="tour-step__copy">
-              <span class="handle handle--dark">04 / attach</span>
-              <h3>Quando precisar ver de perto, você abre o terminal certo.</h3>
-              <p>
-                O Attach abre o terminal vivo daquele agente direto no navegador. Você não precisa caçar tmux,
-                aba, sessão ou janela perdida.
-              </p>
-              <ul class="tour-bullets">
-                <li>Um clique para entrar no terminal real.</li>
-                <li>Sem adivinhar onde a execução ficou.</li>
-                <li>Visibilidade quando você precisa auditar.</li>
-              </ul>
-            </div>
-            <div class="tour-visual tour-visual--terminal" aria-hidden="true">
-              <div class="terminal-mock">
-                <div class="terminal-mock__bar">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <strong>attach / frontend</strong>
-                </div>
-                <code>$ npm run build</code>
-                <code>✓ onboarding route created</code>
-                <code>✓ proof screenshot exported</code>
-                <code class="terminal-mock__cursor">posting update to card...</code>
-              </div>
-            </div>
-          </article>
-
-          <article class="tour-step">
-            <div class="tour-step__copy">
-              <span class="handle handle--dark">05 / proof</span>
-              <h3>O "done" vira entrega com contexto e prova.</h3>
-              <p>
-                Quando o agente avança, a entrega não morre dentro do terminal. Ela volta para o card com
-                comentário, imagem, link, vídeo ou resumo técnico.
-              </p>
-              <ul class="tour-bullets">
-                <li>Prova anexada no lugar certo.</li>
-                <li>Histórico de comentários no card.</li>
-                <li>Menos auditoria manual depois do "done".</li>
-              </ul>
             </div>
             <div class="tour-visual tour-visual--proof" aria-hidden="true">
               <div class="proof-card">
                 <span>proof posted</span>
                 <h4>Onboarding entregue</h4>
                 <div class="proof-thumb"></div>
-                <p>Print, link da prévia e resumo da alteração anexados ao card.</p>
-              </div>
-            </div>
-          </article>
-
-          <article class="tour-step tour-step--reverse">
-            <div class="tour-step__copy">
-              <span class="handle handle--dark">06 / loop</span>
-              <h3>Você comenta, aprova ou manda o Boss continuar.</h3>
-              <p>
-                O card vira o centro da conversa. Se você pede ajuste, o Boss recebe de novo, decide o próximo
-                passo e mantém o ciclo rodando.
-              </p>
-              <ul class="tour-bullets">
-                <li>Comentário seu vira nova instrução operacional.</li>
-                <li>O Boss coordena a próxima execução.</li>
-                <li>A equipe de IA continua trabalhando com rastreabilidade.</li>
-              </ul>
-            </div>
-            <div class="tour-visual tour-visual--loop" aria-hidden="true">
-              <div class="loop-stack">
-                <div class="loop-message loop-message--user">
-                  Ajusta o primeiro passo para founders técnicos.
-                </div>
-                <div class="loop-message loop-message--boss">
-                  Recebido. Vou revisar copy, acionar frontend e pedir nova prova.
-                </div>
-                <div class="loop-action">Boss despachando próxima decisão</div>
+                <p>Print, link da prévia e resumo anexados ao card.</p>
               </div>
             </div>
           </article>

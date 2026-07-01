@@ -86,7 +86,6 @@ a {
 }
 
 .hero,
-.problem-section,
 .flow-section,
 .waitlist-section {
   width: min(var(--max), calc(100% - 40px));
@@ -432,49 +431,8 @@ p {
   font-size: clamp(32px, 3.8vw, 50px);
 }
 
-.problem-section,
 .flow-section {
   padding: clamp(72px, 9vw, 118px) 0;
-}
-
-.problem-section--dark {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  padding: clamp(76px, 9vw, 120px) max(20px, calc((100vw - var(--max)) / 2));
-  background: var(--dark-bg);
-  color: var(--text-dark);
-}
-
-.problem-section--dark .eyebrow {
-  color: var(--volt);
-}
-
-.problem-section--dark h2 {
-  color: var(--text-dark);
-}
-
-.problem-section--dark h2 em {
-  color: rgba(240, 240, 232, 0.56);
-}
-
-.problem-section--dark .problem-intro p,
-.problem-section--dark .problem-list p {
-  color: var(--muted-dark);
-}
-
-.problem-section--dark .problem-list article {
-  border-color: rgba(255, 255, 255, 0.09);
-  background: var(--dark-card);
-  box-shadow: none;
-}
-
-.problem-section--dark .problem-list h3 {
-  color: var(--text-dark);
-}
-
-.problem-section--dark .problem-list span {
-  color: rgba(240, 240, 232, 0.36);
 }
 
 .section-heading {
@@ -482,74 +440,11 @@ p {
   margin-bottom: 38px;
 }
 
-.variant-pill {
-  display: inline-flex;
-  width: max-content;
-  max-width: 100%;
-  margin: 0 0 18px;
-  border: 1px solid var(--card-border);
-  border-radius: 6px;
-  background: var(--oat);
-  color: var(--text-muted);
-  font-family: var(--mono);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  padding: 4px 10px;
-  text-transform: lowercase;
-}
-
-.variant-pill[hidden] {
-  display: none;
-}
-
-.problem-intro {
-  max-width: 760px;
-  margin-top: 26px;
-}
-
-.problem-intro p {
-  margin-bottom: 10px;
-  color: var(--text-muted);
-  font-size: 18px;
-  line-height: 1.72;
-}
-
-.problem-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-
-.problem-list article {
-  border: 1px solid var(--card-border);
-  border-left: 3px solid var(--clay);
-  border-radius: 18px;
-  background: var(--card-bg);
-  padding: 24px;
-  box-shadow: 0 12px 40px rgba(1, 0, 10, 0.04);
-}
-
-.problem-list span {
-  display: block;
-  margin-bottom: 26px;
-  color: var(--text-light);
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.problem-list p {
-  margin-bottom: 0;
-  color: var(--text-muted);
-  font-size: 16px;
-}
-
 .flow-section--tour {
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: clamp(76px, 9vw, 122px) 0 clamp(84px, 10vw, 136px);
+  padding: clamp(74px, 9vw, 116px) 0 clamp(74px, 9vw, 116px);
   border-top: 1px solid rgba(255, 255, 255, 0.09);
   background: var(--dark-bg);
   color: var(--text-dark);
@@ -586,15 +481,19 @@ p {
 
 .product-tour {
   display: grid;
-  gap: clamp(38px, 7vw, 78px);
+  gap: clamp(30px, 5vw, 56px);
+}
+
+.product-tour--simple {
+  margin-top: 8px;
 }
 
 .tour-step {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(380px, 1fr);
-  gap: clamp(28px, 6vw, 80px);
+  gap: clamp(28px, 5vw, 68px);
   align-items: center;
-  padding-top: clamp(34px, 5vw, 62px);
+  padding-top: clamp(28px, 4vw, 48px);
   border-top: 1px solid rgba(255, 255, 255, 0.09);
 }
 
@@ -618,7 +517,7 @@ p {
 
 .tour-step__copy p {
   max-width: 620px;
-  margin-bottom: 18px;
+  margin-bottom: 0;
   color: var(--muted-dark);
   font-size: 17px;
   line-height: 1.7;
@@ -628,34 +527,6 @@ p {
   border-color: rgba(255, 255, 255, 0.09);
   background: rgba(213, 239, 138, 0.12);
   color: var(--volt);
-}
-
-.tour-bullets {
-  display: grid;
-  gap: 10px;
-  margin: 0;
-  padding: 0;
-  color: var(--text-dark);
-  list-style: none;
-}
-
-.tour-bullets li {
-  position: relative;
-  padding-left: 20px;
-  color: rgba(240, 240, 232, 0.74);
-  font-size: 15px;
-  line-height: 1.45;
-}
-
-.tour-bullets li::before {
-  content: "";
-  position: absolute;
-  top: 0.72em;
-  left: 0;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--volt);
 }
 
 .tour-visual {
@@ -673,10 +544,7 @@ p {
 
 .mock-window,
 .decision-panel,
-.hud-list,
-.terminal-mock,
-.proof-card,
-.loop-stack {
+.proof-card {
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 18px;
   background: rgba(26, 26, 24, 0.92);
@@ -779,90 +647,6 @@ p {
   font-weight: 600;
 }
 
-.hud-list {
-  display: grid;
-  gap: 12px;
-}
-
-.hud-row {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.035);
-  padding: 15px;
-}
-
-.agent-dot {
-  width: 11px;
-  height: 11px;
-  flex: 0 0 auto;
-  border-radius: 50%;
-}
-
-.agent-dot--working {
-  background: var(--volt);
-  box-shadow: 0 0 18px rgba(213, 239, 138, 0.45);
-}
-
-.agent-dot--idle {
-  background: var(--iris);
-}
-
-.agent-dot--blocked {
-  background: var(--clay);
-}
-
-.hud-row strong {
-  display: block;
-  color: var(--text-dark);
-  font-weight: 700;
-}
-
-.hud-row p {
-  margin: 2px 0 0;
-  color: var(--muted-dark);
-  font-size: 14px;
-}
-
-.terminal-mock {
-  display: grid;
-  gap: 10px;
-  font-family: var(--mono);
-}
-
-.terminal-mock__bar {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 6px;
-}
-
-.terminal-mock__bar span {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: rgba(240, 240, 232, 0.28);
-}
-
-.terminal-mock__bar strong {
-  margin-left: auto;
-  color: var(--muted-dark);
-  font-size: 11px;
-  font-weight: 500;
-}
-
-.terminal-mock code {
-  color: rgba(240, 240, 232, 0.72);
-  font-size: 13px;
-  white-space: normal;
-}
-
-.terminal-mock__cursor {
-  color: var(--volt) !important;
-}
-
 .proof-thumb {
   height: 150px;
   margin: 14px 0;
@@ -872,43 +656,6 @@ p {
     linear-gradient(135deg, rgba(213, 239, 138, 0.22), transparent 48%),
     linear-gradient(180deg, rgba(196, 191, 255, 0.18), transparent),
     rgba(255, 255, 255, 0.04);
-}
-
-.loop-stack {
-  display: grid;
-  gap: 12px;
-}
-
-.loop-message {
-  max-width: 82%;
-  border-radius: 16px;
-  padding: 14px;
-  color: var(--text-dark);
-  font-size: 14px;
-  line-height: 1.45;
-}
-
-.loop-message--user {
-  justify-self: end;
-  background: rgba(213, 239, 138, 0.16);
-}
-
-.loop-message--boss {
-  justify-self: start;
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.loop-action {
-  border: 1px solid rgba(213, 239, 138, 0.25);
-  border-radius: 14px;
-  background: rgba(213, 239, 138, 0.1);
-  color: var(--volt);
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  padding: 12px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .waitlist-section {
@@ -1002,10 +749,6 @@ input::placeholder {
     min-height: auto;
   }
 
-  .problem-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .tour-step {
     grid-template-columns: 1fr;
   }
@@ -1018,12 +761,10 @@ input::placeholder {
 @media (max-width: 620px) {
   .site-header,
   .hero,
-  .problem-section,
   .flow-section {
     width: calc(100% - 28px);
   }
 
-  .problem-section--dark,
   .flow-section--tour {
     width: 100%;
   }
@@ -1099,7 +840,6 @@ input::placeholder {
 
   .hero__lead,
   .video-section__copy p,
-  .problem-intro p,
   .waitlist-copy p {
     font-size: 15px;
     max-width: 100%;
@@ -1109,10 +849,6 @@ input::placeholder {
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
-  }
-
-  .problem-list {
-    grid-template-columns: 1fr;
   }
 
   .flow-section--tour {
@@ -1153,10 +889,7 @@ input::placeholder {
 
   .mock-window,
   .decision-panel,
-  .hud-list,
-  .terminal-mock,
-  .proof-card,
-  .loop-stack {
+  .proof-card {
     border-radius: 16px;
     padding: 14px;
   }
