@@ -851,7 +851,7 @@ input::placeholder {
   .hero__lead,
   .video-section__copy p,
   .waitlist-copy p {
-    font-size: 15px;
+    font-size: 14px;
     max-width: 100%;
   }
 
@@ -860,6 +860,7 @@ input::placeholder {
     margin-bottom: 18px;
     margin-right: auto;
     margin-left: auto;
+    line-height: 1.58;
   }
 
   .flow-section--tour {
