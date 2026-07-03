@@ -5,8 +5,8 @@ import assert from "node:assert/strict";
 const waitlistPages = ["index.html"];
 const script = readFileSync(new URL("../main.js", import.meta.url), "utf8");
 const styles = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
-const heroVideoPath = new URL("../assets/seedmypeople.mp4", import.meta.url);
-const heroPosterPath = new URL("../assets/seedmypeople-poster.jpg", import.meta.url);
+const heroVideoPath = new URL("../assets/seedmypeople-v4.mp4", import.meta.url);
+const heroPosterPath = new URL("../assets/seedmypeople-v4-poster.jpg", import.meta.url);
 
 function cssRule(selector) {
   const escapedSelector = selector.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -67,8 +67,8 @@ test("index.html uses the local VSL video in the hero", () => {
   const html = readFileSync(new URL("../index.html", import.meta.url), "utf8");
 
   assert.match(html, /styles\.css\?v=waitlist-terminal-20260703-9/);
-  assert.match(html, /<video class="hero-video-player" controls playsinline preload="metadata" poster="assets\/seedmypeople-poster\.jpg">/);
-  assert.match(html, /<source src="assets\/seedmypeople\.mp4" type="video\/mp4">/);
+  assert.match(html, /<video class="hero-video-player" controls playsinline preload="metadata" poster="assets\/seedmypeople-v4-poster\.jpg">/);
+  assert.match(html, /<source src="assets\/seedmypeople-v4\.mp4" type="video\/mp4">/);
   assert.doesNotMatch(html, /Embed VTurb|Inserir player/);
   assert.match(styles, /\.hero-video-frame iframe,\s*\.hero-video-frame video\s*{/);
   assert.ok(existsSync(heroVideoPath));
