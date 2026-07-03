@@ -8,7 +8,7 @@ Landing page estática para a waitlist do MyPeople.
 - `grupo.html`: página pós-cadastro com CTA para o grupo do WhatsApp e links úteis.
 - `main.js`: fluxo do formulário, máscara simples de WhatsApp e redirecionamento para `grupo.html`.
 - `styles.css`: estilos globais da landing e da página pós-cadastro.
-- `assets/seedmypeople-v4.mp4`: vídeo da primeira dobra da landing page.
+- `assets/seedmypeople-v5.mp4`: vídeo da primeira dobra da landing page.
 - `tests/lp-form-flow.test.mjs`: testes estáticos do fluxo, links e principais regras de layout.
 
 ## Como abrir localmente
