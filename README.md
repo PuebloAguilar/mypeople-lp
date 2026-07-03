@@ -1,19 +1,29 @@
 # MyPeople LP
 
-Landing page estática para a campanha de waitlist do MyPeople.
+Landing page estática para a waitlist do MyPeople.
 
 ## Estrutura
 
-- `index.html`: página principal da landing.
-- `styles.css`: estilos da página.
+- `index.html`: página principal da landing page.
+- `grupo.html`: página pós-cadastro com CTA para o grupo do WhatsApp e links úteis.
+- `main.js`: fluxo do formulário, máscara simples de WhatsApp e redirecionamento para `grupo.html`.
+- `styles.css`: estilos globais da landing e da página pós-cadastro.
+- `assets/seedmypeople.mp4`: vídeo da primeira dobra da landing page.
+- `tests/lp-form-flow.test.mjs`: testes estáticos do fluxo, links e principais regras de layout.
 
-## Como abrir
+## Como abrir localmente
 
-Abra `index.html` no navegador.
+```bash
+python3 -m http.server 8080
+```
 
-## Próximos ajustes
+Depois acesse:
 
-- Inserir o embed real da VSL via VTurb.
-- Inserir o endpoint real do formulário da waitlist.
-- Inserir o link real do grupo fechado de WhatsApp na página de obrigado ou fluxo pós-cadastro.
+- `http://localhost:8080/index.html`
+- `http://localhost:8080/grupo.html`
 
+## Observações
+
+- O projeto não conecta banco de dados nem endpoint externo.
+- O formulário valida os campos no navegador e redireciona para `grupo.html`.
+- O link real do grupo de WhatsApp deve ser adicionado depois em `grupo.html`, no atributo `href` do botão com `data-whatsapp-link`.

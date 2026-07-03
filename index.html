@@ -1,30 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MyPeople - Waitlist com VSL no topo</title>
     <meta
       name="description"
-      content="Entre na waitlist do MyPeople e acompanhe demos reais, bastidores e primeiros convites no grupo fechado."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      content="Entre na waitlist do MyPeople e acompanhe demos reais, bastidores e primeiros convites no grupo fechado.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="plow-favicon.ico" sizes="any" />
-    <link rel="shortcut icon" href="plow-favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/plow-favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/plow-favicon-192.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/plow-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+      rel="stylesheet">
+    <link rel="icon" href="plow-favicon.ico" sizes="any">
+    <link rel="shortcut icon" href="plow-favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/plow-favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/plow-favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/plow-touch-icon.png">
+    <link rel="stylesheet" href="styles.css?v=waitlist-terminal-20260703-9">
+    <script src="main.js?v=group-page-phone-compact-20260703" defer></script>
   </head>
   <body class="page-vsl-top">
     <header class="site-header" aria-label="Topo">
       <a class="brand" href="#top" aria-label="MyPeople">
-        <img src="assets/plow-icon.png" alt="" width="34" height="34" decoding="async" />
+        <img src="assets/plow-icon.png" alt="" width="34" height="34" decoding="async">
         <span>plow / mypeople</span>
       </a>
       <a class="header-link" href="#waitlist">Entrar na waitlist</a>
@@ -42,9 +41,9 @@
           </div>
           <div class="hero__after-video">
             <p class="hero__lead">
-              Pare de gerenciar terminais.<br class="mobile-break" />
-              Coloque seus agentes para trabalhar<br class="mobile-break" />
-              como equipe, com Boss, status ao vivo<br class="mobile-break" />
+              Pare de gerenciar terminais.<br class="mobile-break">
+              Coloque seus agentes para trabalhar<br class="mobile-break">
+              como equipe, com Boss, status ao vivo<br class="mobile-break">
               e prova no card certo.
             </p>
             <div class="hero__actions">
@@ -56,13 +55,9 @@
 
         <aside class="hero-video-card hero-video-card--large" aria-label="VSL do MyPeople">
           <div class="hero-video-frame">
-            <div class="video-placeholder video-placeholder--hero">
-              <span>Embed VTurb</span>
-              <strong>
-                Inserir player<br class="mobile-break" />
-                da VSL aqui
-              </strong>
-            </div>
+            <video class="hero-video-player" controls playsinline preload="metadata" poster="assets/seedmypeople-poster.jpg">
+              <source src="assets/seedmypeople.mp4" type="video/mp4">
+            </video>
           </div>
         </aside>
       </section>
@@ -73,7 +68,7 @@
           <h2 id="flow-title">
             Um loop simples.
             <em>
-              Prioridade,<br class="mobile-break" />
+              Prioridade,<br class="mobile-break">
               Boss, prova.
             </em>
           </h2>
@@ -155,13 +150,13 @@
         </div>
       </section>
 
-      <section id="waitlist" class="waitlist-section" aria-labelledby="waitlist-title">
+      <section id="waitlist" class="waitlist-section waitlist-section--light" aria-labelledby="waitlist-title">
         <div class="waitlist-copy">
           <p class="eyebrow">Grupo fechado no WhatsApp</p>
           <h2 id="waitlist-title">
             Entre na waitlist.
             <em>
-              Acompanhe os<br class="mobile-break" />
+              Acompanhe os<br class="mobile-break">
               primeiros acessos.
             </em>
           </h2>
@@ -169,50 +164,89 @@
             Depois do cadastro, você recebe o convite para o grupo fechado onde vamos mostrar demos reais,
             bastidores da construção e selecionar os primeiros builders para testar.
           </p>
-          <p class="disclaimer">
-            Entrar no grupo não garante acesso imediato, mas dá prioridade para acompanhar tudo de perto e
-            ser considerado nos primeiros convites.
-          </p>
         </div>
 
-        <form class="form" action="#" method="post">
-          <label>
-            Nome
-            <input type="text" name="name" autocomplete="name" placeholder="Seu nome" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" autocomplete="email" placeholder="voce@email.com" required />
-          </label>
-          <label>
-            WhatsApp
-            <input type="tel" name="whatsapp" autocomplete="tel" placeholder="+55 11 99999-9999" required />
-          </label>
-          <label>
-            Ferramenta principal
-            <select name="tool" required>
-              <option value="">Selecione</option>
-              <option>Claude Code</option>
-              <option>Cursor</option>
-              <option>Codex</option>
-              <option>Windsurf</option>
-              <option>Outra</option>
-            </select>
-          </label>
-          <label>
-            Maior dor hoje
-            <select name="pain" required>
-              <option value="">Selecione</option>
-              <option>Status dos agentes</option>
-              <option>Contexto espalhado</option>
-              <option>Terminal demais</option>
-              <option>Entrega sem prova</option>
-              <option>Coordenação geral</option>
-            </select>
-          </label>
-          <button class="button button--volt" type="submit">Entrar na waitlist</button>
+        <form class="form waitlist-terminal-form waitlist-terminal-form--light" action="#" method="post" data-waitlist-form>
+          <div class="waitlist-terminal-bar">
+            <div class="plow-window-title">
+              <span class="plow-window-controls" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>plow / intake</span>
+            </div>
+            <strong>waitlist.new</strong>
+          </div>
+
+          <div class="waitlist-terminal-body">
+            <div class="waitlist-form-grid">
+              <label class="waitlist-field">
+                <span>Nome</span>
+                <input type="text" name="name" autocomplete="name" placeholder="Seu nome" required>
+              </label>
+              <label class="waitlist-field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" placeholder="voce@email.com" required>
+              </label>
+              <div class="waitlist-field waitlist-field--phone">
+                <span id="whatsapp-label">WhatsApp</span>
+                <div class="phone-input" data-phone-field>
+                  <select class="phone-country-select" name="whatsapp_country" aria-label="Pais do WhatsApp" data-whatsapp-country>
+                    <option value="+55" data-placeholder="(00) 90000-0000" selected>🇧🇷 +55</option>
+                    <option value="+1" data-placeholder="(555) 555-5555">🇺🇸 +1</option>
+                    <option value="+351" data-placeholder="912 345 678">🇵🇹 +351</option>
+                    <option value="+44" data-placeholder="7400 123456">🇬🇧 +44</option>
+                    <option value="+54" data-placeholder="11 2345-6789">🇦🇷 +54</option>
+                    <option value="+52" data-placeholder="55 1234 5678">🇲🇽 +52</option>
+                    <option value="+34" data-placeholder="612 345 678">🇪🇸 +34</option>
+                    <option value="+57" data-placeholder="300 123 4567">🇨🇴 +57</option>
+                    <option value="+56" data-placeholder="9 1234 5678">🇨🇱 +56</option>
+                    <option value="+598" data-placeholder="91 234 567">🇺🇾 +598</option>
+                  </select>
+                  <input
+                    class="phone-local-input"
+                    type="tel"
+                    name="whatsapp_local"
+                    autocomplete="tel"
+                    inputmode="tel"
+                    placeholder="(00) 90000-0000"
+                    required
+                    aria-labelledby="whatsapp-label"
+                    data-whatsapp-local>
+                  <input type="hidden" name="whatsapp" value="" data-whatsapp-full>
+                </div>
+              </div>
+              <label class="waitlist-field">
+                <span>Ferramenta principal</span>
+                <select name="tool" required>
+                  <option value="">Selecione</option>
+                  <option>Claude Code</option>
+                  <option>Cursor</option>
+                  <option>Codex</option>
+                  <option>Windsurf</option>
+                  <option>Outra</option>
+                </select>
+              </label>
+              <label class="waitlist-field waitlist-field--wide">
+                <span>Maior dor hoje</span>
+                <select name="pain" required>
+                  <option value="">Selecione</option>
+                  <option>Status dos agentes</option>
+                  <option>Contexto espalhado</option>
+                  <option>Terminal demais</option>
+                  <option>Entrega sem prova</option>
+                  <option>Coordenação geral</option>
+                </select>
+              </label>
+            </div>
+
+            <button class="button button--terminal-submit" type="submit">Entrar na waitlist</button>
+          </div>
         </form>
       </section>
     </main>
+
+    <p class="page-signature" aria-hidden="true">plow pbc - 2026 &lt;</p>
   </body>
 </html>
